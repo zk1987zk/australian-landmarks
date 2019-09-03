@@ -1,0 +1,258 @@
+
+html{/*
+	min-height: 1800px;
+	min-width: 1800px ;*/
+}
+
+body{
+	background-image: url("../images/background.jpg");
+	/*background:#E8A11E;*/
+	font-family:Georgia, Times,serif;
+	text-align:center;
+	font-size: 12pt;
+	color:white;
+}
+
+
+h1{		
+	font-size:50pt;
+	text-align:center;
+	height:50px;
+}
+
+a h2 {
+	margin-top: 0;
+}
+
+h3{     
+	font-size: 30px;     
+	text-align:center; 
+}
+
+h4{
+	font-size: 20px;
+	text-align:center;
+}
+
+p {
+	font-size: 20px;
+	color:#305AD9;
+}
+
+#infoDiv{
+	color:brown;
+}
+
+#infoDiv2{
+	color:brown;
+}
+
+.pick{	
+	font-size: 25pt;
+	text-align:center;
+	height:100px;
+	color:#E8A11E;
+	background-color: white;
+	cursor: pointer;
+	border-radius:30%;
+}
+
+.pick:hover{
+	background-color: #EB001F;
+	border-radius:40%;
+	transition:0.5s;
+}
+
+.button {
+	padding: 1px;
+	cursor: pointer;
+}
+
+#infoButton{
+	position: absolute;
+	float:left;
+	margin-left: 10%;
+}
+
+#enterButton{
+	position: relative;
+	float:right;
+	margin-right: 10%;
+}
+.menuButton {
+	float: left;
+	margin-left: 10%;
+	margin-top:-150px;
+}
+
+.checkButton {
+	float: right;
+	margin-right: 10%;
+	margin-top:-150px;
+}
+
+#difficulty{	
+	font-size:15pt;
+	text-align:center;
+	height:50px;
+	color:#E8A11E;
+	background-color: white;
+	cursor: pointer;
+	border-radius:30%;
+}
+
+#difficulty:hover{
+	background-color: #EB001F;
+	border-radius:40%;
+	transition:0.5s;
+}
+
+#levels {
+	margin-top: 120px;
+}
+
+#easy{
+	display: inline-table;
+	margin-right: 50px;
+
+}
+
+#medium{
+	display: inline-table;
+	margin-right: auto;
+	margin-right: 50px;
+}
+
+#hard{   
+	margin-top: 50px;
+	margin-right: auto;
+	display: inline-table;
+}
+
+#instructionBox {
+	font-family: Helvetica, sans-serif;
+	font-size: 20px;
+	margin-left:auto;
+	margin-right:auto;
+	height: 2200px;
+	width: 900px;
+	margin-top: 80px;
+	border: solid 10px white;
+}
+
+#imageBox {
+	width: 400px;
+	height: 250px;
+	background-color: #E8A11E;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	border: 12px white solid;
+  	border-radius: 20px;
+}
+
+#drop {
+  background-color: #E8A11E;
+  border: 12px white solid;
+  border-radius: 20px;
+  width:760px;
+  height: 130px; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  position: relative;
+  z-index: 1
+}
+
+
+#timelineBox2 {
+	width: 800px;
+	height: 100px;	
+	background-color: #E8A11E;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	position: relative;
+	border: 12px white solid;
+  	border-radius: 20px;
+}
+
+#timelineBox3 {
+	width: 800px;
+	height: 100px;	
+	background-color: #E8A11E;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	position: relative;
+	border: 12px white solid;
+  	border-radius: 20px;
+}
+
+.draggable {
+	z-index: 9
+}
+
+#winingtextinstruction {
+	font-family: Georgia, Times,serif;
+	font-size: 15px
+}
+
+#infoBox {
+	width: 70%;
+	min-height: 380px;
+	margin: auto;
+	background-color: #E8A11E;
+  	border: 12px white solid;
+  	padding: 10px;
+}
+
+#infoBox h1 {
+	margin-top: 0;
+}
+
+#articleText{
+	max-height: 400px;
+	overflow: hidden;
+	text-align: left;
+	padding-left: 10px;
+}
+
+#winImg {
+	height: 200px;
+	width: 200px;
+	float: left;
+}
+
+
+
+
+#origin img, #drop img {
+  margin-top: 3px;
+  margin-left: 5px;
+}
+#origin {
+  background-color: lightgreen;
+}
+
+
+.ui-draggable-dragging{
+	z-index:10 ;
+}
+
+
+#info {
+	float:left;
+}
+
+#instructionBox2{
+	font-family: Helvetica, sans-serif;
+	font-size: 20px;
+	margin-left:auto;
+	margin-right:auto;
+	height: 1900px;
+	width: 1300px;
+	margin-top: 80px;
+	border: solid 10px white;
+}
+

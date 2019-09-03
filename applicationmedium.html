@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+
+       <title>Application</title>	
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+		<link href="css/lightbox.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/ui.css" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/javascript.js"></script>
+        <script type="text/javascript" src="js/trovequery.js"></script>
+		<script type="text/javascript" src="js/lightbox.js"></script>
+		<script type="text/javascript"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.11.2/jquery-ui.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function () {
+		startLevel(5);});
+		</script>
+
+	</head>
+	<h1>AUSTRALIAN LANDMARKS</h1>
+<html lang="en">
+	<body>
+		<div id ="nameDiv"></div>
+		<div id = "imageBox">
+			
+			<img onclick="moveImage(this);" class="draggable" src="" width="120" height="120">
+			<img onclick="moveImage(this);" class="draggable" src="" width="120" height="120">
+			<img onclick="moveImage(this);" class="draggable" src="" width="120" height="120">
+			<img onclick="moveImage(this);" class="draggable" src="" width="120" height="120">
+			<img onclick="moveImage(this);" class="draggable" src="" width="120" height="120">
+
+		</div>
+		<div id="infoDiv"></div>
+		<p><- Oldest | Newest -></p>
+		<div id="drop" class="fbox"></div>
+		
+
+		<div class="menuButton" width="60" height="100">
+			<h2><INPUT Type="BUTTON" VALUE="Menu" class="pick" ONCLICK="window.location.href='index.html'">
+		</div>
+
+		<div class="checkButton" width="60" height="100">
+			<h2><INPUT Type="BUTTON" VALUE="Check" class="pick" ONCLICK="checkOrder()">
+		</div>
+
+	</body>
+
+
+</html>

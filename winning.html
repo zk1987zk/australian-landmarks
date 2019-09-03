@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+
+        <title>Deco1800</title>	
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+		<link href="css/lightbox.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <!--<script type="text/javascript" src="js/javascript.js"></script>-->
+		<script type="text/javascript" src="js/lightbox.js"></script>
+	</head>
+	<div id = "winingtextinstruction">
+	<h1>YOU WIN</h>
+<html lang="en">
+	<head>
+		<title>Instruction</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<!--<script type="text/javascript" src="js/script.js"></script> -->
+		<script type="text/javascript">
+
+		$(document).ready(function() {
+			$("#info").attr("src", localStorage.imageSrc);
+			$("#heading").html("<h3>" + "An old article about " + decodeURI(localStorage.searchTerm) + "</h3>");
+
+				var trove_key = "jsk1qqntnrj7qbvf";
+				var potentialArticles = [];
+				var url = "http://api.trove.nla.gov.au/result?key=" + trove_key + 
+				"&encoding=json&zone=newspaper&sortby=relevance&include=articletext,pdf&q=" + 
+				localStorage.searchTerm + "&s=0&n=25&callback=?";
+	
+	
+	
+				console.log(url);
+				console.log("Getting aritcle " + localStorage.searchTerm);
+	
+	
+				$.getJSON(url, function(data) {
+					$.each(data.response.zone[0].records.article, function(index, value) {
+						if(value.heading != undefined && value.articleText != undefined 
+							&& value.troveUrl != undefined) {
+
+							potentialArticles.push(value);
+						}
+					});
+
+					// get random article to show
+					showArticle = potentialArticles[Math.floor(Math.random() * potentialArticles.length)];
+					$("#articleText").html("<a href='" + showArticle.troveUrl + "' target='_blank'><h4>" + "Click here to see the original article" + "</h4></a><p>" + showArticle.articleText + "</p>");
+				});
+		});
+		</script>
+	</head>
+
+	<body>
+		<div id = "infoBox">
+			<div id="heading"></div>
+			<div id ="winImg"><img id= "info" width="100%"></div>
+			<div id="articleText"> </div>
+			
+			
+		</div>
+		<div class="button" width="60" height="100">
+			<h2><INPUT Type="BUTTON" VALUE="Play Again" class="pick" ONCLICK="window.location.href='level.html'">
+		</div>
+	</body>
+</html>
